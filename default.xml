@@ -3,11 +3,9 @@
 
   <default sync-j="2"/>
 
-  <!-- use only mirrored repos -->
-    <remote fetch="https://github.com/" name="github" />
-      <remote fetch="git://git.openembedded.org/meta-openembedded" name="git-oe" />
-        <remote fetch="git://git.yoctoproject.org/poky.git" name="git-yocto" />
-
+  <remote fetch="https://github.com/" name="github" />
+  <remote fetch="git://git.openembedded.org/meta-openembedded" name="git-oe" />
+  <remote fetch="git://git.yoctoproject.org/poky.git" name="git-yocto" />
 
   <project remote="git-yocto" revision="dunfell" name="poky.git" path="sources/poky"/>
 </manifest>
