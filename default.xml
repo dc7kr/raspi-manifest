@@ -4,8 +4,13 @@
   <default sync-j="2"/>
 
   <remote fetch="https://github.com/" name="github" />
-  <remote fetch="git://git.openembedded.org/meta-openembedded" name="git-oe" />
-  <remote fetch="git://git.yoctoproject.org/poky.git" name="git-yocto" />
+  <remote fetch="git://git.openembedded.org/" name="git-oe" />
+  <remote fetch="git://git.yoctoproject.org" name="git-yocto" />
 
-  <project remote="git-yocto" revision="dunfell" name="poky.git" path="sources/poky"/>
+  <project remote="git-yocto" revision="dunfell" name="poky.git"             path="sources/poky"/>
+  <project remote="git-yocto" revision="dunfell" name="meta-raspberrypi"     path="sources/poky/meta-raspberrypi"/>
+  <project remote="git-yocto" revision="dunfell" name="meta-security.git"    path="sources/poky/meta-security"/>
+  <project remote="git-oe"    revision="dunfell" name="meta-openembedded"    path="sources/poky/meta-openembedded"/>
+  <project remote="github"    revision="dunfell" name="meta-qt5/meta-qt5"    path="sources/poky/meta-qt5"/>
+  <project remote="github"    revision="dunfell" name="jumpnow/meta-jumpnow" path="sources/poky/meta-jumpnow"/>
 </manifest>
